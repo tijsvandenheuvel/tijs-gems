@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 P5 projects | Tijs Gems</title>
+  <meta name="description" content="Chapter 2 P5 projects | Tijs Gems" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 P5 projects | Tijs Gems" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 P5 projects | Tijs Gems" />
+  
+  
+  
+
+<meta name="author" content="Tijs Van den Heuvel" />
+
+
+<meta name="date" content="2021-10-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="code-ref.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><h3>&nbsp;&nbsp;Tijs Gems</h3></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Index</a></li>
+<li class="chapter" data-level="2" data-path="p5-projects.html"><a href="p5-projects.html"><i class="fa fa-check"></i><b>2</b> P5 projects</a><ul>
+<li class="chapter" data-level="2.1" data-path="p5-projects.html"><a href="p5-projects.html#goldberg-polyhedron"><i class="fa fa-check"></i><b>2.1</b> Goldberg Polyhedron</a></li>
+<li class="chapter" data-level="2.2" data-path="p5-projects.html"><a href="p5-projects.html#cylinder-robot-arm"><i class="fa fa-check"></i><b>2.2</b> Cylinder robot arm</a></li>
+<li class="chapter" data-level="2.3" data-path="p5-projects.html"><a href="p5-projects.html#evolution-1-smart-rockets"><i class="fa fa-check"></i><b>2.3</b> Evolution 1: smart rockets</a></li>
+<li class="chapter" data-level="2.4" data-path="p5-projects.html"><a href="p5-projects.html#evolution-2-evolutionary-system"><i class="fa fa-check"></i><b>2.4</b> Evolution 2: evolutionary system</a></li>
+<li class="chapter" data-level="2.5" data-path="p5-projects.html"><a href="p5-projects.html#ant-simulation"><i class="fa fa-check"></i><b>2.5</b> Ant simulation</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="code-ref.html"><a href="code-ref.html"><i class="fa fa-check"></i><b>3</b> coding reference</a><ul>
+<li class="chapter" data-level="3.1" data-path="code-ref.html"><a href="code-ref.html#python"><i class="fa fa-check"></i><b>3.1</b> Python</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="code-ref.html"><a href="code-ref.html#pandas"><i class="fa fa-check"></i><b>3.1.1</b> Pandas</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="code-ref.html"><a href="code-ref.html#html"><i class="fa fa-check"></i><b>3.2</b> HTML</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="code-ref.html"><a href="code-ref.html#radio-button-group"><i class="fa fa-check"></i><b>3.2.1</b> radio button group</a></li>
+<li class="chapter" data-level="3.2.2" data-path="code-ref.html"><a href="code-ref.html#space"><i class="fa fa-check"></i><b>3.2.2</b> Space</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Tijs Gems</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="p5-projects" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> P5 projects</h1>
+<p>These are some visualizations I made with P5</p>
+<div id="goldberg-polyhedron" class="section level2">
+<h2><span class="header-section-number">2.1</span> Goldberg Polyhedron</h2>
+<p>This is a project to calculate the coordinates and create a visualization of a (4,0) goldberg polyhedron</p>
+<details>
+<p><summary>More info…</summary></p>
+<p><a href="https://en.wikipedia.org/wiki/Goldberg_polyhedron" target="_blank">wikipedia: Goldberg polyhedron</a></p>
+<p><a href="http://paulbourke.net/geometry/platonic/" target="_blank">Platonic solids by Paul Bourke</a></p>
+<p><a href="https://tijsvandenheuvel.github.io/p5/goldberg_polyhedron/vertex_coordinates.json" target="_blank">vertex coordinates</a></p>
+<p><a href="https://github.com/tijsvandenheuvel/p5/tree/main/goldberg_polyhedron" target="_blank">source code</a></p>
+</details>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="p5-projects.html#cb1-1"></a>knitr<span class="op">::</span><span class="kw">include_url</span>(<span class="st">&quot;https://tijsvandenheuvel.github.io/p5/goldberg_polyhedron/&quot;</span>,<span class="dt">height =</span> <span class="st">&quot;777px&quot;</span>)</span></code></pre></div>
+<iframe src="https://tijsvandenheuvel.github.io/p5/goldberg_polyhedron/" width="777px" height="777px">
+</iframe>
+</div>
+<div id="cylinder-robot-arm" class="section level2">
+<h2><span class="header-section-number">2.2</span> Cylinder robot arm</h2>
+<p>This is a visualization of the movement of a cylindrical robot arm with a variable amount of modules.</p>
+<p>It is generated with relative coordinates.</p>
+<p>I have not fully succeeded in calculating the absolute coordinates of the key points.</p>
+<p>I would need a better grasp of linear algebra and rotation matrices.</p>
+<details>
+<p><summary>More info…</summary></p>
+<p><a href="https://en.wikipedia.org/wiki/Rotation_matrix" target="_blank">wikipedia: Rotation matrix</a></p>
+<p><a href="https://github.com/tijsvandenheuvel/p5/tree/main/cylinder_robot_arm" target="_blank">source code</a></p>
+</details>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="p5-projects.html#cb2-1"></a>knitr<span class="op">::</span><span class="kw">include_url</span>(<span class="st">&quot;https://tijsvandenheuvel.github.io/p5/cylinder_robot_arm/&quot;</span>,<span class="dt">height =</span> <span class="st">&quot;600px&quot;</span>)</span></code></pre></div>
+<iframe src="https://tijsvandenheuvel.github.io/p5/cylinder_robot_arm/" width="777px" height="600px">
+</iframe>
+</div>
+<div id="evolution-1-smart-rockets" class="section level2">
+<h2><span class="header-section-number">2.3</span> Evolution 1: smart rockets</h2>
+<p>This is a simple example of an evolutionary algorithm.</p>
+<p>The rockets learn to reach the target by reproducing and evolving.</p>
+<p>A rocket has an array of vectors as its DNA and every frame it applies the next vector.</p>
+<p>We start with a genetic pool of 200 different random rockets.</p>
+<p>Every 400 frames, the fitness of each rocket is calculated by how close it is to the target.</p>
+<p>A new population is constructed by mating random rockets from the population with randomly chosen genes from one or the other.</p>
+<p>The fitter a rocket is, the higher chance it has to be chosen as a mate</p>
+<details>
+<p><summary>More info…</summary></p>
+<p><a href="https://en.wikipedia.org/wiki/Evolutionary_algorithm" target="_blank">wikipedia: Evolutionary algorithm</a></p>
+<p><a href="https://www.youtube.com/watch?v=bGz7mv2vD6g" target="_blank">The tutorial I followed</a></p>
+<p><a href="https://github.com/tijsvandenheuvel/p5/tree/main/evolution1" target="_blank">source code</a></p>
+</details>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="p5-projects.html#cb3-1"></a>knitr<span class="op">::</span><span class="kw">include_url</span>(<span class="st">&quot;https://tijsvandenheuvel.github.io/p5/evolution1&quot;</span>,<span class="dt">height =</span> <span class="st">&quot;800px&quot;</span>)</span></code></pre></div>
+<iframe src="https://tijsvandenheuvel.github.io/p5/evolution1" width="777px" height="800px">
+</iframe>
+</div>
+<div id="evolution-2-evolutionary-system" class="section level2">
+<h2><span class="header-section-number">2.4</span> Evolution 2: evolutionary system</h2>
+<p>This is a simple example of an evolutionary system.</p>
+<p>The rockets try to survive by seeking and eating food.</p>
+<p>The faster a rocket goes, the faster it dies.</p>
+<p>If a rocket has enough health it can reproduce.</p>
+<p>The rockets have DNA consisting of color, maxspeed (length), maxforce.</p>
+<p>The color is to illustrate genetic variation.</p>
+<p>Food particles are randomly generated and also left when a rocket dies.</p>
+<p>You can add a predator to see how it impacts the system.</p>
+<details>
+<p><summary>More info…</summary></p>
+<p><a href="https://en.wikipedia.org/wiki/Evolutionary_systems" target="_blank">wikipedia: Evolutionary systems</a></p>
+<p><a href="https://www.youtube.com/watch?v=VnFF5V5DS8s" target="_blank">Inspiration video</a></p>
+<p><a href="https://github.com/tijsvandenheuvel/p5/tree/main/evolution2" target="_blank">source code</a></p>
+</details>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="p5-projects.html#cb4-1"></a>knitr<span class="op">::</span><span class="kw">include_url</span>(<span class="st">&quot;https://tijsvandenheuvel.github.io/p5/evolution2&quot;</span>,<span class="dt">height =</span> <span class="st">&quot;750px&quot;</span>)</span></code></pre></div>
+<iframe src="https://tijsvandenheuvel.github.io/p5/evolution2" width="777px" height="750px">
+</iframe>
+</div>
+<div id="ant-simulation" class="section level2">
+<h2><span class="header-section-number">2.5</span> Ant simulation</h2>
+<p>This is an attempt to simulate ant-like behavior and emergent patterns.</p>
+<p>The ant try to find the food and when they found it they bring it back to the colony.</p>
+<p>The ants search the food by random walks and following pheromones left by other ants.</p>
+<p>The steering behavior of this simulation is very rudimentary and can be optimized in the future.</p>
+<p>This simulation was inspired by this video by <a href="https://www.youtube.com/channel/UCmtyQOKKmrMVaKuRXz02jbQ" target="_blank">Sebastion Lague</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/X-iSQQgOd1A?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+<details>
+<p><summary>More info…</summary></p>
+<p><a href="https://github.com/tijsvandenheuvel/p5/tree/main/antsim" target="_blank">source code</a></p>
+</details>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="p5-projects.html#cb5-1"></a>knitr<span class="op">::</span><span class="kw">include_url</span>(<span class="st">&quot;https://tijsvandenheuvel.github.io/p5/antsim&quot;</span>,<span class="dt">height =</span> <span class="st">&quot;777px&quot;</span>)</span></code></pre></div>
+<iframe src="https://tijsvandenheuvel.github.io/p5/antsim" width="777px" height="777px">
+</iframe>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="code-ref.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Tijs Gems.pdf", "Tijs Gems.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
