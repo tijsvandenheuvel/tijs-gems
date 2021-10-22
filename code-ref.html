@@ -145,6 +145,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.4" data-path="p5-projects.html"><a href="p5-projects.html#evolution-2-evolutionary-system"><i class="fa fa-check"></i><b>2.4</b> Evolution 2: evolutionary system</a></li>
 <li class="chapter" data-level="2.5" data-path="p5-projects.html"><a href="p5-projects.html#ant-simulation"><i class="fa fa-check"></i><b>2.5</b> Ant simulation</a></li>
 <li class="chapter" data-level="2.6" data-path="p5-projects.html"><a href="p5-projects.html#big-tree"><i class="fa fa-check"></i><b>2.6</b> Big Tree</a></li>
+<li class="chapter" data-level="2.7" data-path="p5-projects.html"><a href="p5-projects.html#info-vis"><i class="fa fa-check"></i><b>2.7</b> Info Vis</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="code-ref.html"><a href="code-ref.html"><i class="fa fa-check"></i><b>3</b> coding reference</a><ul>
 <li class="chapter" data-level="3.1" data-path="code-ref.html"><a href="code-ref.html#python"><i class="fa fa-check"></i><b>3.1</b> Python</a><ul>
@@ -181,24 +182,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">3.1.1</span> Pandas</h3>
 <div id="get-not-empty-rows" class="section level4">
 <h4><span class="header-section-number">3.1.1.1</span> get not empty rows</h4>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="code-ref.html#cb6-1"></a>df.loc[<span class="op">~</span>df[<span class="st">&#39;col&#39;</span>].isnull()]</span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="code-ref.html#cb8-1"></a>df.loc[<span class="op">~</span>df[<span class="st">&#39;col&#39;</span>].isnull()]</span></code></pre></div>
 </div>
 <div id="convert-column-to-datetime" class="section level4">
 <h4><span class="header-section-number">3.1.1.2</span> Convert column to datetime</h4>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="code-ref.html#cb7-1"></a>df[<span class="st">&#39;datetime&#39;</span>]<span class="op">=</span>pd.to_datetime(df[<span class="st">&#39;timestring&#39;</span>])</span></code></pre></div>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="code-ref.html#cb9-1"></a>df[<span class="st">&#39;datetime&#39;</span>]<span class="op">=</span>pd.to_datetime(df[<span class="st">&#39;timestring&#39;</span>])</span></code></pre></div>
 </div>
 <div id="get-rows-where-column-matches-string" class="section level4">
 <h4><span class="header-section-number">3.1.1.3</span> Get rows where column matches string</h4>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="code-ref.html#cb8-1"></a>df.loc[df[<span class="st">&#39;column_name&#39;</span>] <span class="op">==</span> <span class="st">&#39;string&#39;</span>]</span></code></pre></div>
+<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="code-ref.html#cb10-1"></a>df.loc[df[<span class="st">&#39;column_name&#39;</span>] <span class="op">==</span> <span class="st">&#39;string&#39;</span>]</span></code></pre></div>
 </div>
 <div id="get-rows-where-column-contains-string" class="section level4">
 <h4><span class="header-section-number">3.1.1.4</span> Get rows where column contains string</h4>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="code-ref.html#cb9-1"></a>df.loc[df[<span class="st">&#39;column_name&#39;</span>].<span class="bu">str</span>.contains(<span class="st">&#39;string&#39;</span>)]</span></code></pre></div>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="code-ref.html#cb11-1"></a>df.loc[df[<span class="st">&#39;column_name&#39;</span>].<span class="bu">str</span>.contains(<span class="st">&#39;string&#39;</span>)]</span></code></pre></div>
 </div>
 <div id="iterate-rows-dataframe" class="section level4">
 <h4><span class="header-section-number">3.1.1.5</span> iterate rows dataframe</h4>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="code-ref.html#cb10-1"></a><span class="cf">for</span> row <span class="kw">in</span> df.iterrows():</span>
-<span id="cb10-2"><a href="code-ref.html#cb10-2"></a>  <span class="bu">print</span>(row)</span></code></pre></div>
+<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="code-ref.html#cb12-1"></a><span class="cf">for</span> row <span class="kw">in</span> df.iterrows():</span>
+<span id="cb12-2"><a href="code-ref.html#cb12-2"></a>  <span class="bu">print</span>(row)</span></code></pre></div>
 </div>
 </div>
 </div>
@@ -206,22 +207,22 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">3.2</span> HTML</h2>
 <div id="radio-button-group" class="section level3">
 <h3><span class="header-section-number">3.2.1</span> radio button group</h3>
-<div class="sourceCode" id="cb11"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb11-1"><a href="code-ref.html#cb11-1"></a><span class="kw">&lt;form&gt;</span></span>
-<span id="cb11-2"><a href="code-ref.html#cb11-2"></a>    <span class="kw">&lt;fieldset</span><span class="ot"> id=</span><span class="st">&quot;group1&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb11-3"><a href="code-ref.html#cb11-3"></a>        <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;radio&quot;</span><span class="ot"> value=</span><span class="st">&quot;&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb11-4"><a href="code-ref.html#cb11-4"></a>        <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;radio&quot;</span><span class="ot"> value=</span><span class="st">&quot;&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb11-5"><a href="code-ref.html#cb11-5"></a>    <span class="kw">&lt;/fieldset&gt;</span></span>
-<span id="cb11-6"><a href="code-ref.html#cb11-6"></a></span>
-<span id="cb11-7"><a href="code-ref.html#cb11-7"></a>    <span class="kw">&lt;fieldset</span><span class="ot"> id=</span><span class="st">&quot;group2&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb11-8"><a href="code-ref.html#cb11-8"></a>        <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;radio&quot;</span><span class="ot"> value=</span><span class="st">&quot;&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb11-9"><a href="code-ref.html#cb11-9"></a>        <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;radio&quot;</span><span class="ot"> value=</span><span class="st">&quot;&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb11-10"><a href="code-ref.html#cb11-10"></a>        <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;radio&quot;</span><span class="ot"> value=</span><span class="st">&quot;&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb11-11"><a href="code-ref.html#cb11-11"></a>    <span class="kw">&lt;/fieldset&gt;</span></span>
-<span id="cb11-12"><a href="code-ref.html#cb11-12"></a><span class="kw">&lt;/form&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb13"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb13-1"><a href="code-ref.html#cb13-1"></a><span class="kw">&lt;form&gt;</span></span>
+<span id="cb13-2"><a href="code-ref.html#cb13-2"></a>    <span class="kw">&lt;fieldset</span><span class="ot"> id=</span><span class="st">&quot;group1&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb13-3"><a href="code-ref.html#cb13-3"></a>        <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;radio&quot;</span><span class="ot"> value=</span><span class="st">&quot;&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb13-4"><a href="code-ref.html#cb13-4"></a>        <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;radio&quot;</span><span class="ot"> value=</span><span class="st">&quot;&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb13-5"><a href="code-ref.html#cb13-5"></a>    <span class="kw">&lt;/fieldset&gt;</span></span>
+<span id="cb13-6"><a href="code-ref.html#cb13-6"></a></span>
+<span id="cb13-7"><a href="code-ref.html#cb13-7"></a>    <span class="kw">&lt;fieldset</span><span class="ot"> id=</span><span class="st">&quot;group2&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb13-8"><a href="code-ref.html#cb13-8"></a>        <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;radio&quot;</span><span class="ot"> value=</span><span class="st">&quot;&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb13-9"><a href="code-ref.html#cb13-9"></a>        <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;radio&quot;</span><span class="ot"> value=</span><span class="st">&quot;&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb13-10"><a href="code-ref.html#cb13-10"></a>        <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;radio&quot;</span><span class="ot"> value=</span><span class="st">&quot;&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb13-11"><a href="code-ref.html#cb13-11"></a>    <span class="kw">&lt;/fieldset&gt;</span></span>
+<span id="cb13-12"><a href="code-ref.html#cb13-12"></a><span class="kw">&lt;/form&gt;</span></span></code></pre></div>
 </div>
 <div id="space" class="section level3">
 <h3><span class="header-section-number">3.2.2</span> Space</h3>
-<div class="sourceCode" id="cb12"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb12-1"><a href="code-ref.html#cb12-1"></a><span class="dv">&amp;nbsp;</span></span></code></pre></div>
+<div class="sourceCode" id="cb14"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb14-1"><a href="code-ref.html#cb14-1"></a><span class="dv">&amp;nbsp;</span></span></code></pre></div>
 
 </div>
 </div>
