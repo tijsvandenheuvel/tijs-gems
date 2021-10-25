@@ -24,7 +24,7 @@
 <meta name="author" content="Tijs Van den Heuvel" />
 
 
-<meta name="date" content="2021-10-22" />
+<meta name="date" content="2021-10-25" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="index.html"/>
-<link rel="next" href="code-ref.html"/>
+<link rel="next" href="machine-learning-notebooks.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -147,13 +147,19 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.6" data-path="p5-projects.html"><a href="p5-projects.html#big-tree"><i class="fa fa-check"></i><b>2.6</b> Big Tree</a></li>
 <li class="chapter" data-level="2.7" data-path="p5-projects.html"><a href="p5-projects.html#info-vis"><i class="fa fa-check"></i><b>2.7</b> Info Vis</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="code-ref.html"><a href="code-ref.html"><i class="fa fa-check"></i><b>3</b> coding reference</a><ul>
-<li class="chapter" data-level="3.1" data-path="code-ref.html"><a href="code-ref.html#python"><i class="fa fa-check"></i><b>3.1</b> Python</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="code-ref.html"><a href="code-ref.html#pandas"><i class="fa fa-check"></i><b>3.1.1</b> Pandas</a></li>
+<li class="chapter" data-level="3" data-path="machine-learning-notebooks.html"><a href="machine-learning-notebooks.html"><i class="fa fa-check"></i><b>3</b> Machine learning notebooks</a><ul>
+<li class="chapter" data-level="3.1" data-path="machine-learning-notebooks.html"><a href="machine-learning-notebooks.html#connect-4-reinforcement-learning"><i class="fa fa-check"></i><b>3.1</b> connect-4 Reinforcement learning</a></li>
+<li class="chapter" data-level="3.2" data-path="machine-learning-notebooks.html"><a href="machine-learning-notebooks.html#predicting-absenteeism"><i class="fa fa-check"></i><b>3.2</b> Predicting Absenteeism</a></li>
+<li class="chapter" data-level="3.3" data-path="machine-learning-notebooks.html"><a href="machine-learning-notebooks.html#tweet-analysis-and-emoji-prediction"><i class="fa fa-check"></i><b>3.3</b> Tweet analysis and emoji prediction</a></li>
+<li class="chapter" data-level="3.4" data-path="machine-learning-notebooks.html"><a href="machine-learning-notebooks.html#wikipedia-hyperlink-network"><i class="fa fa-check"></i><b>3.4</b> Wikipedia hyperlink network</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="code-ref.html"><a href="code-ref.html#html"><i class="fa fa-check"></i><b>3.2</b> HTML</a><ul>
-<li class="chapter" data-level="3.2.1" data-path="code-ref.html"><a href="code-ref.html#radio-button-group"><i class="fa fa-check"></i><b>3.2.1</b> radio button group</a></li>
-<li class="chapter" data-level="3.2.2" data-path="code-ref.html"><a href="code-ref.html#space"><i class="fa fa-check"></i><b>3.2.2</b> Space</a></li>
+<li class="chapter" data-level="4" data-path="code-ref.html"><a href="code-ref.html"><i class="fa fa-check"></i><b>4</b> coding reference</a><ul>
+<li class="chapter" data-level="4.1" data-path="code-ref.html"><a href="code-ref.html#python"><i class="fa fa-check"></i><b>4.1</b> Python</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="code-ref.html"><a href="code-ref.html#pandas"><i class="fa fa-check"></i><b>4.1.1</b> Pandas</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="code-ref.html"><a href="code-ref.html#html"><i class="fa fa-check"></i><b>4.2</b> HTML</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="code-ref.html"><a href="code-ref.html#radio-button-group"><i class="fa fa-check"></i><b>4.2.1</b> radio button group</a></li>
+<li class="chapter" data-level="4.2.2" data-path="code-ref.html"><a href="code-ref.html#space"><i class="fa fa-check"></i><b>4.2.2</b> Space</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -178,7 +184,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p>These are some visualizations I made with P5</p>
 <div id="goldberg-polyhedron" class="section level2">
 <h2><span class="header-section-number">2.1</span> Goldberg Polyhedron</h2>
-<p>This is a project to calculate the coordinates and create a visualization of a (4,0) goldberg polyhedron</p>
+<p>This is a project to calculate the coordinates and create a visualization of a (4,0) Goldberg polyhedron.</p>
+<p>A Goldberg polyhedron is the dual of an icosphere, which is created by subdividing and rounding off an icosahedron.</p>
 <details>
 <p><summary>More info…</summary></p>
 <p><a href="https://en.wikipedia.org/wiki/Goldberg_polyhedron" target="_blank">wikipedia: Goldberg polyhedron</a></p>
@@ -278,6 +285,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">2.7</span> Info Vis</h2>
 <p>This is an experiment in text information structure visualisation.</p>
 <p>There will be expanded on this in the future.</p>
+<p>the “vis” button and text input do not work atm.</p>
+<p>You can click the “none” button and press space to traverse a sample text document.</p>
+<p>The sliders change various sizes of network elements.</p>
 <details>
 <p><summary>More info…</summary></p>
 <p><a href="https://github.com/tijsvandenheuvel/p5/tree/main/infovis" target="_blank">source code</a></p>
@@ -294,7 +304,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
         </div>
       </div>
 <a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="code-ref.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="machine-learning-notebooks.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

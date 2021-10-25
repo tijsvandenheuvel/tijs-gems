@@ -7,6 +7,11 @@ evolution-2-evolutionary-system
 ant-simulation
 big-tree
 info-vis
+machine-learning-notebooks
+connect-4-reinforcement-learning
+predicting-absenteeism
+tweet-analysis-and-emoji-prediction
+wikipedia-hyperlink-network
 code_ref
 python
 pandas

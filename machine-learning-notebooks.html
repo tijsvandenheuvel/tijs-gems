@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 coding reference | Tijs Gems</title>
-  <meta name="description" content="Chapter 4 coding reference | Tijs Gems" />
+  <title>Chapter 3 Machine learning notebooks | Tijs Gems</title>
+  <meta name="description" content="Chapter 3 Machine learning notebooks | Tijs Gems" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 coding reference | Tijs Gems" />
+  <meta property="og:title" content="Chapter 3 Machine learning notebooks | Tijs Gems" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 coding reference | Tijs Gems" />
+  <meta name="twitter:title" content="Chapter 3 Machine learning notebooks | Tijs Gems" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="machine-learning-notebooks.html"/>
-
+<link rel="prev" href="p5-projects.html"/>
+<link rel="next" href="code-ref.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -179,58 +179,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="code_ref" class="section level1">
-<h1><span class="header-section-number">Chapter 4</span> coding reference</h1>
-<p>This is just an experiment in how Bookdown works but can become useful in the future</p>
-<div id="python" class="section level2">
-<h2><span class="header-section-number">4.1</span> Python</h2>
-<div id="pandas" class="section level3">
-<h3><span class="header-section-number">4.1.1</span> Pandas</h3>
-<div id="get-not-empty-rows" class="section level4">
-<h4><span class="header-section-number">4.1.1.1</span> get not empty rows</h4>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="code-ref.html#cb8-1"></a>df.loc[<span class="op">~</span>df[<span class="st">&#39;col&#39;</span>].isnull()]</span></code></pre></div>
+<div id="machine-learning-notebooks" class="section level1">
+<h1><span class="header-section-number">Chapter 3</span> Machine learning notebooks</h1>
+<div id="connect-4-reinforcement-learning" class="section level2">
+<h2><span class="header-section-number">3.1</span> connect-4 Reinforcement learning</h2>
+<p>This project was a personal introduction to Reinforcement learning.</p>
+<p>It uses the environment from the connect-x <a href="https://www.kaggle.com/c/connectx">kaggle challenge</a></p>
+<p>I haven’t gone much further than trying to get it to work</p>
+<p>based on notebooks published by others in the kaggle challenge.</p>
+<p><a href="https://tijsvandenheuvel.github.io/machine-learning-notebooks/Connect_4_RL" target="_blank">open notebook</a></p>
 </div>
-<div id="convert-column-to-datetime" class="section level4">
-<h4><span class="header-section-number">4.1.1.2</span> Convert column to datetime</h4>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="code-ref.html#cb9-1"></a>df[<span class="st">&#39;datetime&#39;</span>]<span class="op">=</span>pd.to_datetime(df[<span class="st">&#39;timestring&#39;</span>])</span></code></pre></div>
+<div id="predicting-absenteeism" class="section level2">
+<h2><span class="header-section-number">3.2</span> Predicting Absenteeism</h2>
+<p>This project was the final assignment for the course <em>AI principles</em></p>
+<p>by <em>David D’Haese</em></p>
+<p>from the <em>AP University College Antwerp</em></p>
+<p>The goal of this data analysis report is to predict if an employee will be absent often based on variables of the Absenteeism At Work dataset, with a focus on feature contribution.</p>
+<p><a href="https://tijsvandenheuvel.github.io/machine-learning-notebooks/Predicting_absenteeism" target="_blank">open notebook</a></p>
 </div>
-<div id="get-rows-where-column-matches-string" class="section level4">
-<h4><span class="header-section-number">4.1.1.3</span> Get rows where column matches string</h4>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="code-ref.html#cb10-1"></a>df.loc[df[<span class="st">&#39;column_name&#39;</span>] <span class="op">==</span> <span class="st">&#39;string&#39;</span>]</span></code></pre></div>
+<div id="tweet-analysis-and-emoji-prediction" class="section level2">
+<h2><span class="header-section-number">3.3</span> Tweet analysis and emoji prediction</h2>
+<p>This report describes the results of a research to predict emotion from tweets.</p>
+<p>More in particular the goal of this project was to predict an emoji based on text from a tweet.</p>
+<p><a href="https://tijsvandenheuvel.github.io/machine-learning-notebooks/Predicting_emojis" target="_blank">open notebook</a></p>
 </div>
-<div id="get-rows-where-column-contains-string" class="section level4">
-<h4><span class="header-section-number">4.1.1.4</span> Get rows where column contains string</h4>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="code-ref.html#cb11-1"></a>df.loc[df[<span class="st">&#39;column_name&#39;</span>].<span class="bu">str</span>.contains(<span class="st">&#39;string&#39;</span>)]</span></code></pre></div>
-</div>
-<div id="iterate-rows-dataframe" class="section level4">
-<h4><span class="header-section-number">4.1.1.5</span> iterate rows dataframe</h4>
-<div class="sourceCode" id="cb12"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="code-ref.html#cb12-1"></a><span class="cf">for</span> row <span class="kw">in</span> df.iterrows():</span>
-<span id="cb12-2"><a href="code-ref.html#cb12-2"></a>  <span class="bu">print</span>(row)</span></code></pre></div>
-</div>
-</div>
-</div>
-<div id="html" class="section level2">
-<h2><span class="header-section-number">4.2</span> HTML</h2>
-<div id="radio-button-group" class="section level3">
-<h3><span class="header-section-number">4.2.1</span> radio button group</h3>
-<div class="sourceCode" id="cb13"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb13-1"><a href="code-ref.html#cb13-1"></a><span class="kw">&lt;form&gt;</span></span>
-<span id="cb13-2"><a href="code-ref.html#cb13-2"></a>    <span class="kw">&lt;fieldset</span><span class="ot"> id=</span><span class="st">&quot;group1&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb13-3"><a href="code-ref.html#cb13-3"></a>        <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;radio&quot;</span><span class="ot"> value=</span><span class="st">&quot;&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb13-4"><a href="code-ref.html#cb13-4"></a>        <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;radio&quot;</span><span class="ot"> value=</span><span class="st">&quot;&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb13-5"><a href="code-ref.html#cb13-5"></a>    <span class="kw">&lt;/fieldset&gt;</span></span>
-<span id="cb13-6"><a href="code-ref.html#cb13-6"></a></span>
-<span id="cb13-7"><a href="code-ref.html#cb13-7"></a>    <span class="kw">&lt;fieldset</span><span class="ot"> id=</span><span class="st">&quot;group2&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb13-8"><a href="code-ref.html#cb13-8"></a>        <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;radio&quot;</span><span class="ot"> value=</span><span class="st">&quot;&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb13-9"><a href="code-ref.html#cb13-9"></a>        <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;radio&quot;</span><span class="ot"> value=</span><span class="st">&quot;&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb13-10"><a href="code-ref.html#cb13-10"></a>        <span class="kw">&lt;input</span><span class="ot"> type=</span><span class="st">&quot;radio&quot;</span><span class="ot"> value=</span><span class="st">&quot;&quot;</span><span class="kw">&gt;</span></span>
-<span id="cb13-11"><a href="code-ref.html#cb13-11"></a>    <span class="kw">&lt;/fieldset&gt;</span></span>
-<span id="cb13-12"><a href="code-ref.html#cb13-12"></a><span class="kw">&lt;/form&gt;</span></span></code></pre></div>
-</div>
-<div id="space" class="section level3">
-<h3><span class="header-section-number">4.2.2</span> Space</h3>
-<div class="sourceCode" id="cb14"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb14-1"><a href="code-ref.html#cb14-1"></a><span class="dv">&amp;nbsp;</span></span></code></pre></div>
+<div id="wikipedia-hyperlink-network" class="section level2">
+<h2><span class="header-section-number">3.4</span> Wikipedia hyperlink network</h2>
+<p>In this project is a study in
+- pyspark
+- data (network) visualization.</p>
+<p><a href="https://snap.stanford.edu/data/wiki-topcats.html">data source</a></p>
+<p>source: Jure Leskovec, Stanford University</p>
+<blockquote>
+<p>This is a web graph of Wikipedia hyperlinks collected in September 2011. The network was constructed by first taking the largest strongly connected component of Wikipedia, then restricting to pages in the top set of categories (those with at least 100 pages), and finally taking the largest strongly connected component of the restricted graph.</p>
+</blockquote>
+<p><a href="https://tijsvandenheuvel.github.io/machine-learning-notebooks/Wiki_hyperlink_network" target="_blank">open notebook</a></p>
 
-</div>
 </div>
 </div>
             </section>
@@ -238,8 +222,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="machine-learning-notebooks.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="p5-projects.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="code-ref.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
